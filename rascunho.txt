@@ -1,0 +1,166 @@
+Ótimo! Para executar seu projeto, siga estes passos (considerando que você está usando Vite, React, TypeScript e Tailwind):
+Instale as dependências
+No terminal, navegue até a pasta do projeto (projeto-alt-bank) e execute:
+Apply to rascunho.txt
+ou, se estiver usando o Bun:
+Apply to rascunho.txt
+Inicie o servidor de desenvolvimento
+Se estiver usando npm:
+Apply to rascunho.txt
+Se estiver usando Bun:
+Apply to rascunho.txt
+Acesse no navegador
+Abra o navegador e acesse o endereço que aparecer no terminal, normalmente http://localhost:5173 ou http://localhost:3000.
+
+
+Baseado na análise do código, aqui está a estrutura completa (hierarquia) do projeto:
+
+📁 Estrutura de Arquivos
+projeto-alt-bank/
+├── 📄 package.json                    # Dependências e scripts do projeto
+├── 📄 tsconfig.json                   # Configuração TypeScript principal
+├── 📄 tsconfig.app.json               # Config TypeScript para aplicação
+├── 📄 tsconfig.node.json              # Config TypeScript para Node.js
+├── 📄 vite.config.ts                  # Configuração do Vite
+├── 📄 tailwind.config.ts              # Configuração do Tailwind CSS
+├── 📄 postcss.config.js               # Configuração do PostCSS
+├── 📄 eslint.config.js                # Configuração do ESLint
+├── 📄 components.json                 # Config do shadcn/ui
+├── 📄 index.html                      # HTML principal
+├── 📄 README.md                       # Documentação do projeto
+├── 📄 .gitignore                      # Arquivos ignorados pelo Git
+├── 📄 bun.lockb                       # Lock file do Bun
+├── 📄 package-lock.json               # Lock file do npm
+│
+├── 📁 public/                         # Arquivos estáticos
+│   ├── 📄 favicon.ico                 # Ícone do site
+│   ├── 📄 placeholder.svg             # Imagem placeholder
+│   ├── 📄 robots.txt                  # Configuração para bots
+│   └── 📁 lovable-uploads/            # Uploads de imagens
+│       ├── 🖼️ be13daf4-447f-432f-8bab-13f46a5f340d.png
+│       └── 🖼️ c602e9a4-cd19-43c2-9277-9b27b4152956.png
+│
+└── 📁 src/                           # Código fonte principal
+    ├── 📄 main.tsx                   # Ponto de entrada da aplicação
+    ├── 📄 App.tsx                    # Componente principal com rotas
+    ├── 📄 App.css                    # Estilos globais CSS
+    ├── 📄 index.css                  # Estilos Tailwind e customizações
+    ├── 📄 vite-env.d.ts             # Tipagens do Vite
+    │
+    ├── 📁 pages/                     # Páginas da aplicação
+    │   ├── 📄 Index.tsx              # Página inicial (/)
+    │   ├── 📄 Guard.tsx              # Página do produto Guard (/guard)
+    │   ├── 📄 Solucoes.tsx           # Página de soluções (/solucoes)
+    │   ├── 📄 Industrias.tsx         # Página de indústrias (/industrias)
+    │   ├── 📄 Sobre.tsx              # Página sobre (/sobre)
+    │   ├── 📄 Contato.tsx            # Página de contato (/contato)
+    │   ├── 📄 Developers.tsx         # Página para desenvolvedores (/developers)
+    │   └── 📄 NotFound.tsx           # Página 404 (*)
+    │
+    ├── 📁 components/                # Componentes reutilizáveis
+    │   ├── 📄 Navbar.tsx             # Barra de navegação
+    │   ├── 📄 Footer.tsx             # Rodapé
+    │   ├── 📄 ContactForm.tsx        # Formulário de contato
+    │   ├── 📄 ScrollAnimation.tsx    # Animações de scroll
+    │   │
+    │   ├── 📁 home/                  # Componentes da página inicial
+    │   │   ├── 📄 HeroSection.tsx
+    │   │   ├── 📄 PlataformaSection.tsx
+    │   │   ├── 📄 DiferenciaisSection.tsx
+    │   │   ├── 📄 IndustriasSection.tsx
+    │   │   ├── 📄 CaseSuccessSection.tsx
+    │   │   └── 📄 ContactSection.tsx
+    │   │
+    │   ├── 📁 guard/                 # Componentes da página Guard
+    │   │   ├── 📄 HeroSection.tsx
+    │   │   ├── 📄 AudienceSection.tsx
+    │   │   ├── 📄 DifferenceSection.tsx
+    │   │   ├── 📄 HowItWorksSection.tsx
+    │   │   ├── 📄 ResultsSection.tsx
+    │   │   ├── 📄 RoadmapSection.tsx
+    │   │   └── 📄 FinalCTASection.tsx
+    │   │
+    │   ├── 📁 solucoes/              # Componentes da página Soluções
+    │   │   ├── 📄 HeroSection.tsx
+    │   │   ├── 📄 SolutionsSection.tsx
+    │   │   ├── 📄 SolutionCard.tsx
+    │   │   ├── 📄 FeaturesSection.tsx
+    │   │   └── 📄 ContactSection.tsx
+    │   │
+    │   └── 📁 ui/                    # Componentes UI do shadcn/ui
+    │       ├── 📄 accordion.tsx
+    │       ├── 📄 alert-dialog.tsx
+    │       ├── 📄 alert.tsx
+    │       ├── 📄 aspect-ratio.tsx
+    │       ├── 📄 avatar.tsx
+    │       ├── 📄 badge.tsx
+    │       ├── 📄 breadcrumb.tsx
+    │       ├── 📄 button.tsx
+    │       ├── 📄 calendar.tsx
+    │       ├── 📄 card.tsx
+    │       ├── 📄 carousel.tsx
+    │       ├── 📄 chart.tsx
+    │       ├── 📄 checkbox.tsx
+    │       ├── 📄 collapsible.tsx
+    │       ├── 📄 command.tsx
+    │       ├── 📄 context-menu.tsx
+    │       ├── 📄 dialog.tsx
+    │       ├── 📄 drawer.tsx
+    │       ├── 📄 dropdown-menu.tsx
+    │       ├── 📄 form.tsx
+    │       ├── 📄 hover-card.tsx
+    │       ├── 📄 input-otp.tsx
+    │       ├── 📄 input.tsx
+    │       ├── 📄 label.tsx
+    │       ├── 📄 menubar.tsx
+    │       ├── 📄 navigation-menu.tsx
+    │       ├── 📄 pagination.tsx
+    │       ├── 📄 popover.tsx
+    │       ├── 📄 progress.tsx
+    │       ├── 📄 radio-group.tsx
+    │       ├── 📄 resizable.tsx
+    │       ├── 📄 scroll-area.tsx
+    │       ├── 📄 select.tsx
+    │       ├── 📄 separator.tsx
+    │       ├── 📄 sheet.tsx
+    │       ├── 📄 sidebar.tsx
+    │       ├── 📄 skeleton.tsx
+    │       ├── 📄 slider.tsx
+    │       ├── 📄 sonner.tsx
+    │       ├── 📄 switch.tsx
+    │       ├── 📄 table.tsx
+    │       ├── 📄 tabs.tsx
+    │       ├── 📄 textarea.tsx
+    │       ├── 📄 toast.tsx
+    │       ├── 📄 toaster.tsx
+    │       ├── 📄 toggle.tsx
+    │       ├── 📄 toggle-group.tsx
+    │       ├── 📄 tooltip.tsx
+    │       └── 📄 use-toast.ts
+    │
+    ├── 📁 hooks/                     # Hooks customizados
+    │   ├── 📄 use-mobile.tsx         # Hook para detectar dispositivos móveis
+    │   └── 📄 use-toast.ts           # Hook para notificações
+    │
+    └── 📁 lib/                       # Utilitários e configurações
+        └── 📄 utils.ts               # Funções utilitárias (cn, etc.)
+
+🏗️ Arquitetura do Projeto
+Stack Tecnológica:
+Frontend: React 18 + TypeScript
+Build Tool: Vite
+Styling: Tailwind CSS + CSS customizado
+UI Components: shadcn/ui (baseado em Radix UI)
+Routing: React Router DOM
+Charts: Recharts
+Forms: React Hook Form + Zod
+State Management: TanStack Query
+Icons: Lucide React
+Animations: Tailwind CSS Animate
+Padrões de Organização:
+Pages: Cada rota tem sua própria página
+Components por Feature: Componentes organizados por página/funcionalidade
+UI Components: Componentes reutilizáveis do design system
+Hooks: Lógica reutilizável
+Lib: Utilitários e configurações
+Esta estrutura segue as melhores práticas para projetos React/TypeScript, com separação clara de responsabilidades e organização modular.
